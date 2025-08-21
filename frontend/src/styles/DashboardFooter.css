@@ -1,0 +1,24 @@
+.dash-footer {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-top: 25px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.06);
+  font-size: 1.05rem;
+  color: #334155;
+}
+.dash-footer h4 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.dash-footer ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.dash-footer li {
+  margin-bottom: 6px;
+  line-height: 1.3;
+}

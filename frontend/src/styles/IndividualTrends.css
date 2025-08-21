@@ -1,0 +1,43 @@
+.trends-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.ind-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 9px #e9f5ed;
+  border-left: 5px solid #16a34a;
+  padding: 18px 14px 12px 18px;
+  min-width: 0;
+  margin-bottom: 0;
+  transition: border-left 0.2s;
+}
+.ind-card.critical { border-left: 5px solid #ef4444; }
+.ind-card.borderline { border-left: 5px solid #f59e42; }
+.ind-card .ic-title {
+  font-size: 1.08em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.ind-card .ic-value {
+  font-size: 1.26em;
+  font-weight: bold;
+  margin-right: 7px;
+}
+.ind-card .ic-status {
+  margin-top: 3px;
+  font-size: 0.99em;
+  font-weight: 600;
+  color: #059669;
+}
+.ind-card.critical .ic-status { color: #ef4444; }
+.ind-card.borderline .ic-status { color: #f59e42; }
+.ind-card .ic-range {
+  font-size: 0.89em;
+  color: #6b7280;
+  margin-top: 5px;
+}
+@media (max-width: 700px) {
+  .ind-card { padding: 12px 7px; }
+}

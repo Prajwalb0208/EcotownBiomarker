@@ -1,0 +1,27 @@
+.patient-overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 10px #e5e7eb;
+  padding: 26px 22px;
+  margin-bottom: 26px;
+}
+.patient-overview .label {
+  font-size: 0.99rem;
+  color: #838b97;
+}
+.patient-overview .value {
+  font-size: 1.26rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+.patient-overview .alert { color: #ef4444; }
+.patient-overview .subtxt { font-size: 0.9rem; color: #10b981;}
+@media (max-width: 900px) {
+  .patient-overview { grid-template-columns: 1fr 1fr; gap: 18px;}
+}
+@media (max-width: 500px) {
+  .patient-overview { grid-template-columns: 1fr; padding: 12px 4vw;}
+}
