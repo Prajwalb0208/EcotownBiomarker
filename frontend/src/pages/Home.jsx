@@ -29,6 +29,7 @@ const Home = () => {
         setLoading(false);
       });
   }, []);
+  console.log("API Base URL:", import.meta.env.VITE_API_BASE_URL);
 
   if (loading) return <div>Loading...</div>;
   if (!patient) return <div>No data found</div>;
