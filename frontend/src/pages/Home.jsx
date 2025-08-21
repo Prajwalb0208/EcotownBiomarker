@@ -6,13 +6,14 @@ import DashboardFooter from "../Components/DashboardFooter";
 import "../styles/Home.css";
 
 const PATIENT_NAME = "B G MANJUNATHA SWAMY";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
 
 const Home = () => {
   const [patient, setPatient] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/patients/${encodeURIComponent(PATIENT_NAME)}`)
+    fetch(`${API_BASE_URL}/api/patients/${encodeURIComponent(PATIENT_NAME)}`)
       .then(res => res.json())
       .then(data => {
         if (data.error) {
