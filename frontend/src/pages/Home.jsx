@@ -6,7 +6,7 @@ import DashboardFooter from "../Components/DashboardFooter";
 import "../styles/Home.css";
 
 const PATIENT_NAME = "B G MANJUNATHA SWAMY";
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://ecotownbiomarker.onrender.com';
 
 const Home = () => {
   const [patient, setPatient] = useState(null);
